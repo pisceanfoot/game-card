@@ -1,4 +1,3 @@
-
 function CardGame () {
 	this.logger = new Logger('game');
 
@@ -9,43 +8,31 @@ function CardGame () {
 	var game = new Phaser.Game(gameSetting.screenSize.width, 
 		gameSetting.screenSize.height, 
 		Phaser.AUTO, 
-		'container', 
-		{ 
-			preload: function () {
-				_this.preload();
-			}, 
-			create: function () {
-				_this.create();
-			}
-		}
+		'container'
+		// { 
+		// 	preload: function () {
+		// 		_this.preload();
+		// 	}, 
+		// 	create: function () {
+		// 		_this.create();
+		// 	}
+		// }
 	);
+	game.state.add('CardGame', this);
+	game.state.start('CardGame');
 	this.game = game;
 }
 
 CardGame.prototype.preload = function (argument) {
 	this.logger.log('preload');
+
 	this.game.load.image('background', '../image/background.jpg');
+	this.game.load.spritesheet('dude', '../image/card.png', 32, 48);
 };
 
 CardGame.prototype.create = function (argument) {
 	this.logger.log('create');
 	this.game.add.sprite(0, 0, 'background');
 };
-
-/**
- * main game
- */
-function MainGame (game) {
-	this.game = game;
-}
-
-MainGame.prototype.preload = function () {
-
-}
-
-MainGame.prototype.create = function () {
-
-}
-
 
 var cardGame = new CardGame();
