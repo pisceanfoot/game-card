@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="card-red.png">
+	<SubTexture name="card1" x="0" y="0" width="237" height="355"/>
+	<SubTexture name="card2" x="266" y="0" width="237" height="355"/>
+	<SubTexture name="card3" x="532" y="0" width="237" height="355"/>
+	<SubTexture name="card4" x="798" y="0" width="237" height="355"/>
+	<SubTexture name="card5" x="0" y="384" width="237" height="355"/>
+	<SubTexture name="card6" x="266" y="384" width="237" height="355"/>
+	<SubTexture name="card7" x="532" y="384" width="237" height="355"/>
+	<SubTexture name="card8" x="798" y="384" width="237" height="355"/>
+	<SubTexture name="card9" x="0" y="768" width="237" height="355"/>
+	<SubTexture name="card10" x="266" y="768" width="237" height="355"/>
+	<SubTexture name="card11" x="532" y="768" width="237" height="355"/>
+	<SubTexture name="card12" x="798" y="768" width="237" height="355"/>
+	<SubTexture name="card13" x="0" y="1152" width="237" height="355"/>
+</TextureAtlas>
