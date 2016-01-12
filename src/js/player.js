@@ -11,6 +11,7 @@ function Player (isHost) {
 // game.add.existing(sprite);
 
 Player.prototype.preload = function () {
+	
 	this.card.game = this.game;
 	this.card.preload();
 };

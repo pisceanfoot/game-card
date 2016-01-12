@@ -10,6 +10,7 @@ function CardGame () {
 
 CardGame.prototype.preload = function () {
 	this.logger.log('preload');
+	console.log(this);
 
 	this.game.load.image('background', '../image/background.jpg');
 
